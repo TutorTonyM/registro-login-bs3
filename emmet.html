@@ -1,0 +1,67 @@
+<!-- comentario -->
+ctrl + / = comentario
+
+<!-- Elementos -->
+div = <div></div>
+span = <span></span>
+
+<!-- Clases y Id -->
+div.uno = <div class="uno"></div>
+div#uno = <div id="uno"></div>
+div.uno.dos = <div class="uno dos"></div>
+div#uno#dos = <div id="dos"></div>
+div.uno.dos#tres = <div class="uno dos" id="tres"></div>
+
+<!-- Atributos -->
+div[style="color:red;"] = <div style="color:red;"></div>
+
+<!-- Decendientes -->
+div>div =
+<div>
+    <div></div>
+</div>
+
+div>section>p =
+<div>
+    <section>
+        <p></p>
+    </section>
+</div>
+
+<!-- hermanos -->
+div+div = 
+<div></div>
+<div></div>
+
+div+p =
+<div></div>
+<p></p>
+
+<!-- Mesclas -->
+div.uno>div.dos#tres+span.cuatro
+<div class="uno">
+    <div class="dos" id="tres"></div>
+    <span class="cuatro"></span>
+</div>
+
+<!-- Multiplicadores -->
+ul>li*5 =
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+ul>(li>a)*5
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+<!-- Texto -->
+p{este es un parrafo} = <p>este es un parrafo</p>

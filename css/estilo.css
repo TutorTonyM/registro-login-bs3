@@ -1,0 +1,158 @@
+/* MiProjecto.com - Estilo Principal */
+
+/********** Globales **********/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 70px;
+    padding-bottom: 400px;
+}
+
+.titulo-de-pagina{
+    text-align: center;
+}
+
+.errores{
+    padding: 0 30px;
+    color: #A94442;
+    background: #F2DEDE;
+    border: none;
+    border-radius: 5px;
+}
+
+.error{
+    color: #F00;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        padding-bottom: 200px;
+    }
+}
+
+/********** Pie **********/
+footer{
+    color: #AAA;
+    padding: 45px 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #DDD;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer a:focus,
+footer a:hover{
+    color: #DDD;
+    text-decoration: none;
+}
+
+footer div.row > div{
+    margin-bottom: 15px;
+}
+
+footer .enlaces-internos{
+    position: relative;
+    bottom: -10px;
+}
+
+footer .iconos-redes-sociales > a{
+    display: inline-block;
+    background: #333;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 35px;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    footer{
+        text-align: left;
+    }
+
+    footer div.row > div{
+        margin-bottom: 5px;
+    }
+
+    footer .enlaces-internos{
+        bottom: -20px;
+    }
+
+    footer .pie-derecho{
+        text-align: right;
+    }
+
+    footer .iconos-redes-sociales > a{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 25px;
+    }
+}
+
+/* .row{
+    border: red solid thin;
+}
+
+.col-sm-6{
+    border: green solid thin;
+} */
+
+/********** Registro **********/
+/* #pagina-registro{
+    border: red thin solid;
+}
+#pagina-registro form{
+    border: blue thin solid;
+} */
+
+/********** Formularios **********/
+.campo-contenedor{
+    position: relative;
+}
+
+.campo-contenedor .glyphicon{
+    position: absolute;
+    padding: 15px;
+    font-size: 16px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.campo-contenedor .icono-izquierdo{
+    left: 0;
+}
+
+.campo-contenedor .icono-derecho{
+    right: 0;
+}
+
+.campo-contenedor input{
+    padding: 0 40px;
+}
+
+.icono-rojo{
+    color: #F00;
+}
+
+.icono-verde{
+    color: #0F0;
+}
+
+.invalido{
+    background: #FCC;
+}
+
+.valido{
+    background: #CFC;
+}
