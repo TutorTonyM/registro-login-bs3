@@ -15,8 +15,8 @@
             $mail->isSMTP();
             $mail->Host = 'in-v3.mailjet.com';
             $mail->SMTPAuth = true;
-            $mail->Username = '0ef9ea3cff30eab4de3d5aad2dc1791f';
-            $mail->Password = 'c19c7130e947bc4606454129fb9de8a8';
+            $mail->Username = '';
+            $mail->Password = '';
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
